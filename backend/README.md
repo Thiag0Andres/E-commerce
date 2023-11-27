@@ -1,3 +1,3 @@
-# E-commerce Us API
+# E-commerce API
 
 API for E-commerce.
