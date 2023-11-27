@@ -1,0 +1,63 @@
+@import '../../mixin.scss';
+
+.container-content {
+
+  padding: 0 !important;
+
+  .container-search {
+    background-image: url('../../images/backgroud.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container-input {
+      position: relative;
+
+      img {
+        width: 27px;
+        height: 27px;
+        position: absolute;
+        right: 18px;
+        top: 12px;
+      }
+      
+    }
+  }
+
+  .container-list-products {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .collum-product {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .product-item {
+      margin: 10px;
+      box-shadow: 5px 5px 8px rgba(175, 175, 175, 0.36);
+      padding: 15px;
+      border-radius: 20px;
+      width: 20vw;
+
+      .container-button {
+        justify-content: center;
+
+        .primary-button {
+          margin-top: 15px;
+          width: 10vw;
+        }
+
+      }
+    }
+  }
+
+}

@@ -1,0 +1,10 @@
+@import '../../mixin.scss';
+
+.modal-access {
+  h4 {
+    color: $gray;
+  }
+  .modal-header {
+    border: 0 !important;
+  }
+}

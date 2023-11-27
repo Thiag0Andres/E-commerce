@@ -1,0 +1,283 @@
+@import "./mixin";
+
+//font-family: 'Montserrat', sans-serif;
+//font-family: 'Futura';
+
+
+/* Your default CSS. */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:focus {
+	outline: 0;
+}
+
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	font-feature-settings: 'liga';
+}
+
+html {
+	height: 100%;
+	scroll-behavior: smooth; // scroll suavizado
+}
+
+#root {
+  height: 100vh;
+}
+.App {
+  height: 100vh;
+}
+
+body {
+	font-family: "Roboto", sans-serif !important;
+	font-size: 0.9375rem;
+	top: 0px;
+	left: 0px;
+	overflow-x: hidden;
+
+	max-width: 100%;
+	background-color: white !important;
+	background-position: bottom !important;
+	background-repeat: no-repeat;
+	background-attachment: fixed !important;
+	opacity: 1;
+
+  @media only screen and (min-width: 1000px) {}
+  @media (min-width: 600px) {
+    .MuiToolbar-regular {
+      min-height: 0px !important;
+    }
+  }
+
+  .MuiPagination-ul {
+    .MuiPaginationItem-root {
+      color: $gray !important;
+      outline: none;
+    }
+    .MuiPaginationItem-page.Mui-selected {
+      color: $green !important;
+      background-color: transparent;
+    }
+  }
+
+  button {
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .empty-button {
+    border: 0;
+    background-color: transparent;
+  }
+
+  .input-search {
+    border: 0;
+    font-weight: 400 !important;
+    font-family: "Roboto", sans-serif !important;
+    width: 30vw;
+    border-radius: 100px !important;
+    padding: 25px 50px 25px 17px !important;
+    color: $gray;
+    margin-bottom: 20px;
+
+    &:focus {
+      border-color: rgba(90, 92, 94, 0.25);
+      box-shadow: 0 0 0 0.2rem rgba(90, 92, 94, 0.25);
+    }
+  }
+
+  .form-input {
+    margin-bottom: 15px;
+    border-radius: 100px;
+
+    &:focus {
+      border-color: rgba(90, 92, 94, 0.25);
+      box-shadow: 0 0 0 0.2rem rgba(90, 92, 94, 0.25);
+    }
+  }
+
+  .primary-button {
+    background: $gradient-green !important;
+    border: 0;
+    border-radius: 30px;
+    padding: 8px 30px;
+    &:hover {
+      background: $gradient-green !important;
+      color: $white;
+      border-color: $green;
+      box-shadow: none;
+    }
+    &:focus {
+      background: $gradient-green !important;
+      color: $white !important;
+      box-shadow: none;
+    }
+    &:active {
+      background: $gradient-green !important;
+      color: $white !important;
+      box-shadow: none !important;
+    }
+  }
+
+  .secundary-button {
+    color: $green;
+    background-color: $white !important;
+    border-color: $green;
+    border-radius: 30px;
+    padding: 8px 30px;
+
+    &:hover {
+      background-color: $white !important;
+      color: $green;
+      border-color: $green;
+      box-shadow: none;
+    }
+    &:focus {
+      background-color: $white !important;
+      color: $green;
+      border-color: $green;
+      box-shadow: none;
+    }
+    &:active {
+      background-color: $white !important;
+      color: $green !important;
+      border-color: $green !important;
+      box-shadow: none !important;
+    }
+  }
+
+  // .form-label {
+  //   font-size: 14px;
+  //   color: $gray_texts2;
+
+  //   span {
+  //     color: $blue;
+  //   }
+  // }
+
+  // .form-control {
+  //   background-color: $gray_input !important;
+  //   border: 0;
+  //   font-weight: 400 !important;
+  //   font-family: "Roboto", sans-serif !important;
+  //   border-radius: 10px !important;
+  //   padding: 25px 17px !important;
+  //   color: $gray_texts2;
+  //   margin-bottom: 20px;
+
+  //   &:focus {
+  //     box-shadow: 0 0 0 0.2rem rgba(90, 92, 94, 0.25);
+  //   }
+    
+  // }
+
+  .spinner-border{
+    color: $white;
+  }
+
+  .modal-backdrop {
+    background: rgba(240, 240, 240, 0.5) !important;
+    backdrop-filter: blur(4px);
+  }
+
+  .MuiAppBar-root {
+    z-index: 5;
+  }
+
+  .MuiDrawer-paper {
+    z-index: 6;
+  }
+
+    /* Base for label styling */
+  [type="checkbox"]:not(:checked),
+  [type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+  }
+  [type="checkbox"]:not(:checked) + label,
+  [type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 1.95em;
+    cursor: pointer;
+  }
+
+  /* checkbox aspect */
+  [type="checkbox"]:not(:checked) + label:before,
+  [type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 1.25em; height: 1.25em;
+    background: #fff;
+    border-radius: 4px;
+  }
+  /* checked mark aspect */
+  [type="checkbox"]:not(:checked) + label:after,
+  [type="checkbox"]:checked + label:after {
+    content: '\2713\0020';
+    position: absolute;
+    top: .15em; left: .1em;
+    font-size: 1.3em;
+    line-height: 0.8;
+    color: #333;
+    transition: all .2s;
+    // font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', Arial;
+  }
+  /* checked mark aspect changes */
+  [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+  }
+  [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+  }
+  /* disabled checkbox */
+  [type="checkbox"]:disabled:not(:checked) + label:before,
+  [type="checkbox"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd;
+  }
+  [type="checkbox"]:disabled:checked + label:after {
+    color: #999;
+  }
+  [type="checkbox"]:disabled + label {
+    color: #aaa;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 500;
+}

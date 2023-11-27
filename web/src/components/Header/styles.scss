@@ -1,0 +1,38 @@
+@import '../../mixin.scss';
+
+.navbar {
+  display: flex;
+  justify-content: space-between !important;
+  padding: 15px !important;
+
+  .empty-button.access {
+    margin-right: 20px;
+    color: $gray;
+    font-size: 18px;
+  }
+
+  .container-cart {
+    display: flex;
+    position: relative;
+    padding: 15px 20px;
+
+    .container-count-cart {
+      display: flex;
+      flex-direction: column-reverse;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      .count-cart {
+        background: $gradient-green;
+        border-radius: 15px;
+        width: 30px;
+        height: 30px;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

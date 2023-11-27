@@ -1,0 +1,11 @@
+{
+  "name": "dev",
+  "REACT_APP_LOCAL_STORAGE_USER_AUTH": "@Kumon/token",
+  "REACT_APP_LOCAL_STORAGE_USER_ID": "@Kumon/id",
+  "REACT_APP_LOCAL_STORAGE_USER": "@Kumon/user",
+  "REACT_APP_LOCAL_STORAGE_FILTER": "@Kumon/filter",
+  "REACT_APP_API_URL": "http://localhost:9000/",
+  "headers": {
+    "Content-type": "application/json"
+  }
+}

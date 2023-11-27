@@ -1,0 +1,15 @@
+@import '../../mixin.scss';
+
+.container-profile {
+  background-color: $gray;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+
+  .container-form {
+    background-color: $white;
+    padding: 25px;
+  }
+}
