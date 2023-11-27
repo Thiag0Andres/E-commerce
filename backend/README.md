@@ -1,4 +1,3 @@
-Cheffy Us API
-===============
+# E-commerce Us API
 
-API for [Cheffy Us](https://cheffy.us).
+API for E-commerce.

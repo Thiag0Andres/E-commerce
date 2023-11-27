@@ -1,2 +1,3 @@
-# BD1
-bd1
+# E-commerce frontend
+
+Frontend for E-commerce.
