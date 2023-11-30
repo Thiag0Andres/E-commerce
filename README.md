@@ -25,10 +25,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [React](https://reactjs.org)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Node.js](https://nodejs.org/en/docs)
+- [Knex.js](https://knexjs.org)
 
 ## 💻 Projeto
 
-E-commerce é um sistema com frontend e backend desenvolvido para a cadeira Paradigmas de Linguagens de Programação. Tem como objetivo ser um produto de loja virtual, onde possui um backend monolítico com 5 classes referente a cada rota que nosso front irá consumir, sendo elas user, products, orders, cards e banckAccount. Além disso, possui um frontend feito em React para consumir a Api Rest.
+E-commerce é um sistema com frontend e backend desenvolvido para a cadeira Paradigmas de Linguagens de Programação. Tem como objetivo ser um produto de loja virtual, onde possui um backend monolítico com 5 classes referente a cada rota que o front irá consumir, sendo elas user, products, orders, cards e banckAccount. Contruido com Nodejs e Knexjs, usando sqlite3. Além disso, possui um frontend feito em React para consumir a Api Rest.
 
 <p align="center">
   <img alt="Diagrama" src=".github/BDProject.png" width="80%">
