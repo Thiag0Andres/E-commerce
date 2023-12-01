@@ -11,6 +11,7 @@ module.exports = {
     'prettier/react',
     'prettier/@typescript-eslint',
     'plugin:@typescript-eslint/recommended',
+    'eslint:all',
   ],
   globals: {
     Atomics: 'readonly',
@@ -40,6 +41,7 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': ['error'],
     'no-use-before-define': 'off',
     'linebreak-style': 0,
+    '@typescript-eslint/no-explicit-any': 'off',
   },
   settings: {
     'import/parsers': {
